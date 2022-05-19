@@ -103,7 +103,6 @@ function Explore() {
     //fetch all collections from the custom hook useFetchCollection
     const [_collections] = await fetchAll();
     if (!_collections) return;
-    console.log(_collections);
     setCollectionList(_collections);
   };
 

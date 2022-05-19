@@ -89,9 +89,12 @@ const useFetchMarket = (): [fetchItems, filterNFTs] => {
           //add the uri to the dictonary
           CollectionURIDictionary[item.collectionAddress] = uri;
         }
+        console.log(CollectionURIDictionary);
       })
     );
+    
     return CollectionURIDictionary;
+    
   };
 
   async function setNFTMetadata(
